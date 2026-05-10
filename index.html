@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pixelshuffle</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="terrain-bg">
+            <div class="terrain" id="terrain"></div>
+        </div>
+        <nav>
+            <a href="#" class="nav-logo">PIXELSHUFFLE</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#play">Play</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="particles" id="particles"></div>
+            <div class="hero-game">DIG YOU FOOLS</div>
+            <p class="hero-created">
+                Created By
+                <span style="color: var(--text-bright)">PixelShuffle</span
+                ><br />A two-man team
+            </p>
+            <div class="hero-characters">
+                <div class="char-sprite" data-orbit>
+                    <img
+                        class="miner-frame"
+                        src="character/character_1.png"
+                        alt="Miner"
+                    />
+                    <img
+                        class="miner-eyes"
+                        src="character/eyes_bl.png"
+                        alt=""
+                    />
+                    <div
+                        class="drillbit-orbit"
+                        data-drill
+                        draggable="false"
+                        ondragstart="return false;"
+                        alt="Drillbit"
+                    ></div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#play" class="np-btn">Wishlist</a>
+            </div>
+            <div class="scroll-hint">SCROLL DOWN</div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-inner">
+                <div class="section-title">ABOUT THE GAME</div>
+                <div class="divider"></div>
+                <div class="feature-grid">
+                    <div class="feature-card np-panel">
+                        <div class="bat-sprite" data-bat></div>
+                        <h3>SCARY CREATURES</h3>
+                        <p>Beware of the terrible bat.</p>
+                    </div>
+                    <div class="feature-card np-panel">
+                        <img src="Blocks/diamondlv3.png" alt="Ores" />
+                        <h3>RARE ORES</h3>
+                        <p>Discover and amass a fortune.</p>
+                    </div>
+                    <div class="feature-card np-panel">
+                        <img src="Blocks/gold_chest.png" alt="Chests" />
+                        <h3>HIDDEN TREASURES</h3>
+                        <p>Uncover chests filled with gold and upgrades.</p>
+                    </div>
+                    <div class="feature-card np-panel">
+                        <img src="character/drillbit.png" alt="Upgrade" />
+                        <h3>DRILL UPGRADES</h3>
+                        <p>
+                            Enchant your drillbit with strange and facinating
+                            effects.
+                        </p>
+                    </div>
+                    <div class="feature-card np-panel">
+                        <img src="character/heart1.png" alt="Survive" />
+                        <h3>SURVIVE & THRIVE</h3>
+                        <p>One wrong move and it's over.</p>
+                    </div>
+                    <div class="feature-card np-panel">
+                        <img src="Blocks/grass.png" alt="Explore" />
+                        <h3>EXPLORE DEEP</h3>
+                        <p>The deep calls to you!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="play">
+            <div class="cta-overlay"></div>
+            <div class="cta-content">
+                <div class="cta-title">YOU LIKE TO DIG?</div>
+                <p class="cta-sub">Coming soon to Steam!</p>
+                <div class="cta-buttons">
+                    <a href="#" class="np-btn">COMING SOON</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Pixelshuffle LLC. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
