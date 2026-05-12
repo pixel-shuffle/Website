@@ -586,6 +586,42 @@ footer {
     position: relative;
 }
 
+.contact-link {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.contact-link:hover {
+    color: var(--accent);
+}
+
+.toast {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--bg-card);
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    padding: 12px 28px;
+    font-family: "Jersey10", monospace;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+    z-index: 200;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        opacity 0.3s,
+        transform 0.3s;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
 .divider {
     width: 60px;
     height: 4px;
