@@ -268,12 +268,41 @@ function initBatAnim() {
   });
 }
 
+function givecontact() {
+  //anti bot code
+
+  var v = ".com";
+  var a = "contact";
+  var c = "@pixelshuffle";
+
+  return a + c + v;
+}
+
+function initContactCopy() {
+  var link = document.getElementById("contact-link");
+  var toast = document.getElementById("toast");
+  var toastTimer;
+
+  link.addEventListener("click", function () {
+    navigator.clipboard.writeText(givecontact()).then(function () {
+      toast.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function () {
+        toast.classList.remove("show");
+      }, 2000);
+    });
+  });
+
+  link.style.cursor = "pointer";
+}
+
 function init() {
   buildTerrain();
   buildParticles();
   initMinerAnim();
   initDrillbitOrbit();
   initBatAnim();
+  initContactCopy();
 }
 
 init();
